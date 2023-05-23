@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script>
+    const ar1 = ["svi","su","istog","tipa"];
+    ar1[0] = 100;
+    console.log(ar1);
+    ar1[5] = 300
+    for (let k = 0; k< ar1.length;k++){
+      document.write("Element is: " + ar1[k] + " type " + typeof(ar1[k]) + " <br/> ");
+    }
+    //ar1 = new Array(23, true, 0, false, true);
+    //for (let k = 0; k< ar1.length;k++){
+      //document.write("Element is: " + ar1[k] + " type " + typeof(ar1[k]) + " <br/> ");
+
+    ar1.forEach(function(element, idx, ar1){
+      document.write(element + " ind posi: " + idx + " lenght of and arr: " + ar1.length);
+      document.write(" <br/>");
+    });
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

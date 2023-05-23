@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <script>
+
+    let points = Number(prompt("Please enter the points...."));
+    if(!isNaN(points)){
+        if(points >=90){
+            document.write("<br/> Ocjena je: izvrstan | Bodovi: " + points);
+        } else if (points >= 78) {
+            document.write("<br/> Ocjena je: vrlo dobar | Bodovi: " + points);
+        } else if (points >= 65){
+            document.write("<br/> Ocjena je: dobar | Bodovi: " + points);
+        } else if (points >= 50){
+            document.write("<br/> Ocjena je: dovoljan | Bodovi: " + points);
+        } else {
+            document.write("<br/> Ponavljati testove... | bodovi " + points);
+        }
+
+    } else {
+        alert("Input nije broj");
+    }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
